@@ -1,0 +1,57 @@
+/*https://icolorpalette.com/color/cfd9de#google_vignette*/
+
+:root {
+    --time: 0%;
+}
+
+@font-face {
+    font-family: "digital";
+    src: url("digital-7.ttf");
+}
+
+@font-face {
+    font-family: "round";
+    src: url("VarelaRound-Regular.ttf");
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f5f6;
+    cursor: none;
+}
+
+div.parent {
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: #d1dadf 0px 7px 29px 0px;
+}
+
+div.progress {
+    height: 100%;
+    width: var(--time);
+    background: #a0b4be;
+}
+
+p {
+    color: #1a2226;
+    /* font-family: "digital"; */
+    font-family: "round";
+}
+
+p.goal {
+    opacity: 50%;
+    transition: opacity 1s;
+}
+
+p.goal:hover {
+    opacity: 100%;
+}
